@@ -34,7 +34,6 @@ all_stocks_data = readRDS(file = 'all_stocks_data.rds') # Input stock prices as 
 # Portfolio VaR evaluation
 # ======================================================================================
 
-# Function used by mclapply of Portfolio_performance in empirical and simulation comparison
 Portfolio_VaR_evaluation <- function(data_type, all_stocks_data, n, k, alpha, conjugate_hyperparameters, year, simulation_size)
 {
   if (data_type == "SIMULATION_NORMAL" | data_type == "SIMULATION_NORMAL_SWITCHING" | data_type == "SIMULATION_MGARCH")
