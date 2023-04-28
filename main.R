@@ -28,7 +28,8 @@ conjugate_h = 4
 conjugate_l = -4
 conjugate_hyperparameters = list("conjugate_n_r" = conjugate_n_r, "conjugate_h" = conjugate_h, "conjugate_l" = conjugate_l)
 
-all_stocks_data = readRDS(file = 'all_stocks_data.rds') # Input stock prices as a list of xts objects e.g., list("AAPL" = <xts object with daily market caps (no specific column name required)>, ...)
+# Input stock prices as a list of xts objects e.g., list("AAPL" = <xts object with daily market caps (no specific column name required)>, ...)
+all_stocks_data = readRDS(file = 'all_stocks_data.rds')
 
 # ======================================================================================
 # Portfolio VaR evaluation
